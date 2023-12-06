@@ -1,8 +1,25 @@
-/*
+:root {
+	--dnd-card-bg: #fdf1dc;
+	--dnd-card-border: rgb(230, 154, 40);
+	--dnd-card-color: rgb(51, 51, 51);
+	--dnd-title-color-raw: 130, 32, 0;
+	--dnd-title-color: rgb(var(--dnd-title-color-raw));
+	--dnd-title-font: "Modesto Condensed", serif;
+	--dnd-heading-font: "Mrs Eaves", "MrsEaves", serif;
+	--dnd-body-font: "Bookmania", "Bookman Old Style", serif;
+	--dnd-card-font: "FF Scala Sans Pro", "ScalaSans", sans-serif;
+	--dnd-table-bg: rgb(211 211 211 / 60%);
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+}
 
-If your plugin does not need CSS, delete this file.
-
-*/
+/** Tags */
+.thaumaturge__tag {
+	border: 1px solid var(--thaumaturge-tag-border-color, currentColor);
+	border-radius: 1em;
+	padding: 0 0.3em;
+	margin: 0 0.3em;
+	background-color: var(--dnd-card-border);
+	color: var(--dnd-card-color);
+	font-family: var(--dnd-card-font);
+	font-weight: bold;
+}
